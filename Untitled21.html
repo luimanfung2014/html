@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+
+//WINDOW LOAD function.
+window.onload=function()
+{
+  //CANVAS definition standard variables.
+  canvas=document.getElementById("canvasArea");
+  context=canvas.getContext("2d");
+
+  //MESSAGE details centered on canvas.
+  var mText="你好";
+  var mText1="hello";
+  var xPos=canvas.width/2;
+  var yPos=canvas.height/2;
+
+  //TEXT format details.
+  context.font="40pt Comic Sans MS";
+  context.fillStyle="blue";
+  context.textAlign="upper";
+  context.textBaseline="upper";
+
+  //FULL text.
+  context.fillText(mText,0,yPos);
+  context.fillText(mText1,200,yPos);
+}
+
+</script>
+</head>
+<body>
+
+<div style="width:200px;height:200px;
+margin:0 auto; padding:5px;">
+
+<!- - CANVAS area definition-->
+<canvas id ="canvasArea"
+        width="600" height="600"
+        style="border:2px solid black">
+
+<! - -MESSAGE if browser doesn't support canvas -->
+Your browser doesn't currently support HTML5 Canvas.
+Please check www.caniuse.com/#feat=canvas for information on browsersupport for canvas.
+</canvas>
+
+</div>
+</body>
+</html>
+
+      

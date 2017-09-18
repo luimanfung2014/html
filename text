@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+
+//WINDOW LOAD function.
+
+window.onlaod=function()
+{ 
+  //CONVAS definition standard variables.  
+  canvas=document.getElementById("canvasArea");
+  context=canvas.getContext("2d");
+
+  //MESSAGE details centered on canvas.
+  var mText="HI";
+
+  //Text format details.
+  context.font="80pt Comic Sans MS";
+  context.fillStye=  
+
+
+    
+
+   
+
+
+
+
+
+}
+
+</head>
+
+
+
+
+
+
+</div>
+</body>
+</html>
