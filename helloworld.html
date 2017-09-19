@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body>
+        <div style="width:400px;height:90px;margin:0 auto;padding:5px;">
+            <canvas
+                id="canvasArea"
+                width="400" 
+                height="90"
+                style="border:2px solid black"
+            >
+                Your browser doesn't support HTML5 Canvas.
+            </canvas>
+        </div>
+        <script>
+            //A. WINDOWS LOAD function
+            window.onload = function() {
+                //A1. CANVAS definition standard variables.  
+                canvas=document.getElementById("canvasArea");
+                context=canvas.getContext("2d");
+                
+                //A2.LAYOUT of first rectangle.
+                var xPos=20;   var yPos=20;
+                var width=100;  var height=50;
+                
+                //A3. DISPlAY rectangles.
+                context.fillStyle="skyblue";
+                context.fillRect (xPos,  yPos,  width,height);
+                context.lineWidth=4;
+                context.strokeStyle="red";
+                context.strokeRect (xPos+130,  yPos,   width,height);
+                context.fillStyle="darkblue";
+                context.fillRect (xPos+260,yPos, width,  height);
+                context.clearRect(xPos+285,yPos+10,width-50,height-20);
+            }
+        </script>
+    </body>
+</html>
